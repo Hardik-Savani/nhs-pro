@@ -1,0 +1,241 @@
+.app-beta__container {
+    border-bottom: 1px solid #d8dde0;
+    padding: 8px 0;
+        margin-bottom: 40px !important;
+}
+.app-beta__content {
+    display: table;
+    margin-bottom: 0;
+}
+.nhsuk-main-wrapper{
+  padding-top:0px !important;
+}
+.app-beta__text {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.nhsuk-label{
+  font-weight:bold;
+}
+
+.nhsuk-u-margin-bottom-8 {
+    margin-bottom: 30px !important;
+    margin-top: 5px !important;
+    }
+
+
+table th.numeric {
+    text-align: right;
+}
+
+table td.numeric {
+    text-align: right;
+}
+
+.app-c-tag--danger {
+    background-color: #df3034;
+    color: #fff !important; 
+}
+
+.app-c-tag {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 4px 8px;
+    text-decoration: none;
+    }
+
+    th, td {
+    padding-top: 10px;
+}
+
+
+
+/* footer */
+
+
+
+#footer ul {
+    margin: 0 0 15px 0;
+}
+
+#footer ul {
+    font-size: 16px !important;
+    line-height: 1.5;
+}
+
+#footer  ul {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.5;
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+.footer-info{
+  font-size: 16px !important;
+  padding-top:10px;
+}
+
+
+ #footer ul li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+#footer .open-government-licence {
+    padding-left: 53px;
+}
+
+.open-government-licence {
+    clear: left;
+    position: relative;
+    font-size:16px !important;
+    padding-top:20px;
+
+}
+
+#footer .open-government-licence .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 41px;
+    height: 100%;
+}
+
+
+#footer .open-government-licence .logo {
+    margin-bottom: 1em;
+    padding-top: 0;
+}
+
+#footer .open-government-licence p {
+    font-size: 16px !important;
+    line-height: 1.25;
+}
+
+.footer-wrapper, .open-government-licence, .footer-info
+{
+color: #454a4c !important;
+}
+
+#footer a {
+    color: #454a4c !important;
+}
+
+#footer .open-government-licence p {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+    margin: 0;
+    padding-top: 0.1em;
+}
+
+#footer .open-government-licence .logo a {
+    background-image: url(images/open-government-licence_2x.png);
+    background-size: 41px 17px;
+}
+
+
+#footer .open-government-licence .logo a {
+    display: block;
+    width: 41px;
+    height: 17px;
+    overflow: hidden;
+    text-indent: -999em;
+    background: url(images/open-government-licence_2x.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+#nhs-global-header #logo img {
+    margin: 2px 1px 0 0;
+    vertical-align: bottom;
+    width: 300px !important;
+    max-width: 100%;
+    float: right;
+}
+
+#nhs-global-header #logo {
+    float: left;
+    overflow: visible;
+    color: #fff;
+    line-height: 1;
+    border-bottom: 1px solid transparent;
+    text-rendering: optimizeLegibility;
+}
+
+#nhs-global-header .header-wrapper .header-global .header-logo {
+    float: right;
+}
+
+@media (min-width: 641px){
+#nhs-global-header {
+    background-image: url(/images/header-pension-services.png);
+}
+}
+#nhs-global-header .header-wrapper .header-global .header-logo {
+    margin-bottom: 2px;
+}
+
+@media (min-width: 769px){
+#nhs-global-header .header-wrapper .header-global .header-logo {
+    width: 33.33%;
+}
+}
+@media (min-width: 641px){
+#nhs-global-header .header-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}}
+
+#nhs-global-header .header-wrapper .header-global .header-logo {
+    margin-bottom: 2px;
+}
+
+#nhs-global-header .header-wrapper .header-global .header-logo .content {
+    margin: 0 15px;
+}
+
+
+#nhs-global-header {
+    width: 100%;
+    background-image: url(/images/header-pension-services.svg);
+    background-repeat: no-repeat;
+    background-position: center 3.65em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 190px;
+    padding-top: 20px;
+}
+#nhs-global-header .header-wrapper {
+    max-width: 990px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+#nhs-global-header #logo img {
+    margin: 2px 1px 0 0;
+    vertical-align: bottom;
+    width: 300px !important;
+    max-width: 100%;
+    float: right;
+}
