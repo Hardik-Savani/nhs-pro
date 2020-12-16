@@ -1,8 +1,9 @@
 .app-beta__container {
     border-bottom: 1px solid #d8dde0;
     padding: 8px 0;
-        margin-bottom: 40px !important;
+    
 }
+
 .app-beta__content {
     display: table;
     margin-bottom: 0;
@@ -24,7 +25,15 @@
     margin-bottom: 30px !important;
     margin-top: 5px !important;
     }
+.nhsuk-back-link-spc{
+    margin-top: 10px !important;
+    margin-bottom: 60px !important;
+}
 
+.remove-margin-bottom-h1{
+    margin-bottom: 25px !important; 
+
+}
 
 table th.numeric {
     text-align: right;
@@ -84,6 +93,12 @@ table td.numeric {
   padding-top:10px;
 }
 
+.bsa-account-details-bar__action {
+    float: right;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-top: 20px !important;
+}
 
  #footer ul li {
     display: inline-block;
@@ -94,12 +109,34 @@ table td.numeric {
     padding-left: 53px;
 }
 
+.bold {
+    font-weight: 700;
+}
 .open-government-licence {
     clear: left;
     position: relative;
     font-size:16px !important;
     padding-top:20px;
 
+}
+h1.margn-tp, {
+    margin-top: 48px !important;
+}
+
+.multi-ea-top{
+    margin-top: 15px !important;
+}
+
+.multi-ea-emp{
+    margin-top: 45px !important;
+}
+
+.multi-ea-bottom h2{
+    margin-bottom: 0px !important;
+}
+
+.multi-ea-hr{
+margin-top: 20px !important;
 }
 
 #footer .open-government-licence .logo {
@@ -156,9 +193,12 @@ color: #454a4c !important;
 }
 
 
+@media (min-width: 40.0625em){
+h3, .nhsuk-heading-m {
+    margin-top: 5px;
+}
 
-
-
+}
 
 
 
