@@ -1,0 +1,134 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Content page example - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="app-beta">
+  <div class="nhsuk-width-container app-beta__container">
+    <p class="app-beta__content">
+      <strong class="nhsuk-tag app-beta__tag">
+         BETA
+      </strong>
+      <span class="app-beta__text">
+      This is a new service - your <a href="https://www.snapsurveys.com/wh/s.asp?k=151257549007">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+</div>
+
+
+
+<div class="nhsuk-grid-row multi-ea-top-make">
+<div class="nhsuk-grid-column-three-quarters">
+<p class="bold multi-ea-p">Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed in: Sam Curtis Jones
+</span>
+</p>
+</div>
+
+<div class="nhsuk-grid-column-one-quarter ea">
+<div class="bsa-account-details-bar__action">
+<a href="/logged-out" class="log-out-link">Sign out</a>
+</div>
+</div>
+</div>
+<hr class="nhsuk-section-break nhsuk-section-break--visible">
+
+<div class="nhsuk-back-link nhsuk-back-link-spc">
+  <a class="nhsuk-back-link__link" href="ea">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Back</a>
+</div>
+
+
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="app-page-heading">
+  <span class="nhsuk-caption-l">
+                Make payments to the NHS Pension Scheme<span class="nhsuk-u-visually-hidden"> - </span>
+  </span>
+            June 2019 payment
+            <span class="nhsuk-caption-l">
+                EA1234 - NHS Blackpool<span class="nhsuk-u-visually-hidden"> - </span>
+            </span>
+          </h1>
+
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+    Total pensionable pay
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+    Employee payments
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+    Employer payments
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+   Employee added years (optional)
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+   Additional pension (optional)
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-10">
+   ERRBO (Early Retirement Reduction Buy Out) (optional)
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-10" id="input-width-10" name="test-width-10" type="text">
+</div>
+
+
+
+
+
+
+    </div>
+  </fieldset>
+
+</div>
+<a href="contributions-and-payment" class="nhsuk-button nhsuk-u-margin-bottom-8">Continue</a>
+
+    </div>  
+
+
+
+
+  </div>
+{% endblock %}
