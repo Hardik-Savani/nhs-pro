@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
     <title>
-  Forgotten password - Make payments to the NHS Pension Scheme - NHSBSA
+  Add a new account - Make payments to the NHS Pension Scheme - NHSBSA
 </title>
 
     <link href="https://www.nhs.uk/" rel="preconnect">
@@ -22,6 +22,7 @@
 
 
     <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+    <script src="/js/main.js"></script>
 
     
     <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
@@ -37,6 +38,9 @@
     
   </head>
   <body class="">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
 
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
@@ -57,24 +61,50 @@
     </header>
 
     <div class="app-beta">
-  <div class="nhsuk-width-container app-beta__container">
-    <p class="app-beta__content">
-      <strong class="nhsuk-tag app-beta__tag">
-         BETA
-      </strong>
-      <span class="app-beta__text">
-      This is a new service - your <a href="https://www.snapsurveys.com/wh/s.asp?k=151257549007">feedback</a> will help us to improve it.
-      </span>
-    </p>
-  </div>
-
+<div class="nhsuk-width-container app-beta__container">
+<p class="app-beta__content">
+<strong class="nhsuk-tag app-beta__tag">
+BETA
+</strong>
+<span class="app-beta__text">
+This is a new service - your <a href="https://www.snapsurveys.com/wh/s.asp?k=151257549007">feedback</a> will help us to improve it.
+</span>
+</p>
 </div>
-<div class="nhsuk-width-container">
-  <main class="nhsuk-main-wrapper">
+</div>
+
+
+
+
+
+
+<div class="nhsuk-width-container multi-ea-top">
+<main class="nhsuk-main-wrapper">
+<div class="ea">
+
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-three-quarters multi-ea-bottom">
+<h5>
+Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed in: Sam Curtis Jones
+</span>
+</h5>
+</div>
+<div class="nhsuk-grid-column-one-quarter ea">
+<div class="bsa-account-details-bar__action">
+<a href="/logged-out" class="log-out-link">Sign out</a>
+</div>
+</div>
+</div>
+
+
+<div class="app-beta__container"></div>
+
+
 
 
 <div class="nhsuk-back-link nhsuk-back-link-spc">
-  <a class="nhsuk-back-link__link" href="sign-in">
+  <a class="nhsuk-back-link__link" href="accounts">
     <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
     </svg>
@@ -82,45 +112,72 @@
 </div>
 
 
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="app-page-heading">
+  <span class="nhsuk-caption-l">
+                Make payments to the NHS Pension Scheme<span class="nhsuk-u-visually-hidden"> - </span>
+  </span>
+            Add a new user
+
+          </h1>
 
 
-<div class="nhsuk-grid-row">
 
 
-          <div class="nhsuk-grid-column-two-thirds">
-
-<h1 class="app-page-heading remove-margin-bottom-h1">
-<span class="nhsuk-caption-l">
-Make payments to the NHS Pension Scheme
-<span class="nhsuk-u-visually-hidden"> - </span>
-</span>
-Reset Password
-</h1>
-
-<div class="text">
-                <p id="reset-password-text">We’ll send you an email so you can reset your password.</p>
-            </div>
-
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-20">
+   First name:
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+</div>
 <div class="nhsuk-form-group">
-
-          <div class="nhsuk-form-group">
-          <label class="nhsuk-label" for="one-half">
-          Email address
-          </label>
-          <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
-          </div>
-
-<div>
-  
-  <a href="check-email" class="nhsuk-button nhsuk-u-margin-bottom-8">Send email</a>
+  <label class="nhsuk-label" for="input-width-20">
+    Last name:
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+</div>
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-20">
+    Email address
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+</div>
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="input-width-20">
+    Initial password:
+  </label>
+  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
 </div>
 
 
 
 </div>
-</main>
+</fieldset>
 </div>
 
+
+
+
+
+<br />
+<a href="summary" class="nhsuk-button nhsuk-u-margin-bottom-8">Add User</a>
+
+
+
+
+
+
+
+
+
+</div>  
+
+
+
+
+  </div>
 
 
 
@@ -166,7 +223,8 @@ Reset Password
   
     <!-- Custom JavaScript files can be added to this file -->
     <script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/main.js"></script>
+
+<script src="/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 
 <!-- Add any custom scripts -->
 
@@ -177,5 +235,4 @@ Reset Password
 
   </body>
 </html>
-
 
