@@ -105,17 +105,36 @@ Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed
 
 
 <div class="nhsuk-back-link nhsuk-back-link-spc">
-  <a class="nhsuk-back-link__link" href="make-payment">
+  <a class="nhsuk-back-link__link" href="/mcp/">
     <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
     </svg>
     Back</a>
 </div>
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-three-quarters">
+
+<div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+  <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="nhsuk-error-summary__body">
+    <ul class="nhsuk-list nhsuk-error-summary__list">
+      <li>
+        <a href="#example-error-1">Enter an employee contribution between 5% and 14.5% of total pensionable pay</a>
+      </li>
+      <li>
+        <a href="#example-error-2">Enter a total amount to be debited which matches the sum of all contributions and adjustments</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
 
 
-  <div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-three-quarters">
+
+
 <h1 class="app-page-heading">
 <span class="nhsuk-caption-l">
 Make contribution payments to the NHS Pension Scheme<span class="nhsuk-u-visually-hidden"> - </span>
@@ -131,17 +150,21 @@ December 2020 contribution details for EA1234
   <label class="nhsuk-label" for="input-width-10">
       Total pensionable pay
     </label>
+
 <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+<input class="govuk-input govuk-input--width-5"  name="cost" type="number" spellcheck="false">
 </div>
 </div>
 
-<div class="govuk-form-group">
+<div class="govuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
       Employee contributions
     </label>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter an employee contribution between 5% and 14.5% <br />of total pensionable pay
+</span>
 <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+<input class="govuk-input govuk-input--width-5" id="example-error-1"   type="number" spellcheck="false">
 </div>
 </div>
 
@@ -150,7 +173,7 @@ December 2020 contribution details for EA1234
       Employer contributions
     </label>
 <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+<input class="govuk-input govuk-input--width-5"  name="cost" type="number" spellcheck="false">
 </div>
 </div>
 
@@ -221,7 +244,7 @@ December 2020 contribution details for EA1234
          Adjustment period
         </label>
           <div class="nhsuk-hint" id="example-hint">
-            For example, November 2020
+            For example, February 2021
           </div>
 
           <div class="nhsuk-date-input" id="example">
@@ -300,12 +323,15 @@ December 2020 contribution details for EA1234
 
 </div>
 
-<div class="govuk-form-group">
+<div class="govuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
        Total amount to be debited
     </label>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter a total amount to be debited which matches the sum of all contributions and adjustments
+</span>
 <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+<input class="govuk-input govuk-input--width-5" id="example-error-2" name="cost" type="number" spellcheck="false">
 </div>
 </div>
 
