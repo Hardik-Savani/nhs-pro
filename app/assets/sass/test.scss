@@ -593,3 +593,64 @@ clear: none !important;
   padding-top: 10px;
     margin-left: 10px;
 }
+
+.nhsuk-account-navigation-container {
+    background-color: #FFF;
+}
+.nhsuk-account-navigation {
+    border-top: 10px solid #AEB7BD;
+    border-bottom: 1px solid #AEB7BD;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nhsuk-account-navigation__main {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+
+.nhsuk-account-navigation__main li {
+    display: inline-block;
+    margin-bottom: 0;
+
+}
+.nhsuk-list--bullet, ul {
+
+    padding-left: 20px;
+}
+
+.nhsuk-account-navigation__link {
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+    padding: 12px 16px 8px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.nhs-account-menu__link--home {
+    float: left !important;
+}
+.header-links {
+    float: right !important;
+color: #fff;
+}
+.header-links a{
+  color: #FFF !important;
+  text-decoration: underline;
+}
+
+.header-links-clr{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.header-links  .nhsuk-account-navigation__link
+{
+      padding: 12px 7px 8px !important;
+}
