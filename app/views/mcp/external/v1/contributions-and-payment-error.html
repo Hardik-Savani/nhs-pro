@@ -16,9 +16,9 @@
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
 
-<link href="/css/demo-input.css" rel="stylesheet">
+
   <link href="/css/main.css" rel="stylesheet">
-   <!-- <link href="https://design-system.service.gov.uk/stylesheets/main-573b5962db9ad46c94180a1f5e5ca97e.css" rel="stylesheet" media="all" /> -->
+   <link href="https://design-system.service.gov.uk/stylesheets/main-573b5962db9ad46c94180a1f5e5ca97e.css" rel="stylesheet" media="all" />
   <link href="/css/test.css" rel="stylesheet">
 
 
@@ -93,7 +93,7 @@ Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed
 </div>
 <div class="nhsuk-grid-column-one-quarter ea">
 <div class="bsa-account-details-bar__action">
-<a href="/mcp/signed-out" class="log-out-link">Sign out</a>
+<a href="signed-out" class="log-out-link">Sign out</a>
 </div>
 </div>
 </div>
@@ -105,17 +105,41 @@ Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed
 
 
 <div class="nhsuk-back-link nhsuk-back-link-spc">
-  <a class="nhsuk-back-link__link" href="/mcp/make-payment">
+  <a class="nhsuk-back-link__link" href="/mcp/">
     <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
     </svg>
     Back</a>
 </div>
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-three-quarters">
+
+<div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+  <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="nhsuk-error-summary__body">
+    <ul class="nhsuk-list nhsuk-error-summary__list">
+      <li>
+        <a href="#example-error-1">Enter total pensionable pay</a>
+      </li>
+      <li>
+        <a href="#example-error-2">Enter employee contributions</a>
+      </li>
+      <li>
+        <a href="#example-error-3">Enter employer contributions</a>
+      </li>
+      <li>
+        <a href="#example-error-4">Enter the total amount to be debited</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
-  <div class="nhsuk-grid-row nhsuk-gbp-input">
 
-    <div class="nhsuk-grid-column-three-quarters">
+
+
 <h1 class="app-page-heading">
 <span class="nhsuk-caption-l">
 Make contribution payments to the NHS Pension Scheme<span class="nhsuk-u-visually-hidden"> - </span>
@@ -127,81 +151,80 @@ December 2020 contribution details for EA1234
 
 
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
       Total pensionable pay
     </label>
-    <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-    <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
-    </div>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter total pensionable pay
+</span>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="example-error-1" name="cost" type="number" spellcheck="false">
+</div>
 </div>
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
       Employee contributions
     </label>
-    <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-    <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
-    </div>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter employee contributions
+</span>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5"  id="example-error-2" type="number" spellcheck="false">
+</div>
 </div>
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group nhsuk-form-group--error">
   <label class="nhsuk-label" for="input-width-10">
       Employer contributions
     </label>
-    <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-    <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
-    </div>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter employer contributions
+</span>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="example-error-3" name="cost" type="number" spellcheck="false">
+</div>
 </div>
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group">
   <label class="nhsuk-label" for="input-width-10">
        Employee added years (optional)
     </label>
-    <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-    <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
-    </div>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+</div>
 </div>
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group">
   <label class="nhsuk-label" for="input-width-10">
        Additional pension (optional)
     </label>
-    <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-    <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
-    </div>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+</div>
 </div>
 
-<div class="nhsuk-form-group">
+<div class="govuk-form-group">
   <label class="nhsuk-label" for="input-width-10">
        Early Retirement Reduction Buy Out (ERRBO) (optional)
     </label>
-<div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
-<input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
 </div>
 </div>
 
 
-    </div>
 
 
-
-
-
-
-    </div>
-  </fieldset>
-
-
-</div>
 
 
 <div class="govuk-form-group">
 
   <fieldset class="nhsuk-fieldset">
-    <legend class="nhsuk-label">
-        Are adjustments required?
-    </legend>
+    <label class="nhsuk-label" for="input-width-10">
+     Are adjustments required?
+    </label>
     <div class="nhsuk-radios nhsuk-radios--conditional hide-lft-border">
 
       <div class="nhsuk-radios__item">
@@ -217,36 +240,127 @@ December 2020 contribution details for EA1234
         </label>
       </div>
 
-
-
-      <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
-        <div class="nhsuk-form-group">
-            <br /><br /><a href="/mcp/v1/adjustment-no" class="nhsuk-button nhsuk-u-margin-bottom-8">Save and continue</a>
+      <div class=" nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+        <div class="">
         </div>
       </div>
-
-      <div class="nhsuk-radios__conditional" id="conditional-contact-3">
-        <div class="nhsuk-form-group">
-            <br /><br /><a href="/mcp/v1/contributions-and-payment" class="nhsuk-button nhsuk-u-margin-bottom-8">Save and continue</a>
-        </div>
-      </div>
-
 
       <div class="hide-lft-border">
       <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+<br/>
         <div class="nhsuk-form-group">
-        <br /><br /><a href="/mcp/v1/contributions-and-payment-add-month" class="nhsuk-button nhsuk-u-margin-bottom-8">Save and continue</a>
+        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+          <label class="nhsuk-label bold" for="input-width-10">
+         Adjustment period
+        </label>
+          <div class="nhsuk-hint" id="example-hint">
+            For example, February 2021
+          </div>
+
+          <div class="nhsuk-date-input" id="example">
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                  Month
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-6" id="example-month" name="example-month" type="charset" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="nhsuk-date-input__item">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                  Year
+                </label>
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </fieldset>
       </div>
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label bold" for="input-width-10">
+         Adjustment contribution details
+        </label>
+
+        <label class="nhsuk-label" for="input-width-10">
+          Employee contributions
+        </label>
+        <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-10">
+          Employer contributions
+        </label>
+        <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-10">
+          Employee added years
+        </label>
+        <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-10">
+         Additional pension
+        </label>
+        <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-10">
+         Early Retirement Reduction Buy Out (ERRBO)
+        </label>
+        <div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
+        </div>
+      </div>
+
+    </div>
+
     </div>
   </fieldset>
 
+</div>
+
+<div class="govuk-form-group nhsuk-form-group--error">
+  <label class="nhsuk-label" for="input-width-10">
+       Total amount to be debited
+    </label>
+    <span class="nhsuk-error-message" id="dob-day-error-error">
+  <span class="nhsuk-u-visually-hidden">Error:</span> Enter the total amount to be debited
+</span>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-5" id="example-error-4" name="cost" type="number" spellcheck="false">
+</div>
+</div>
+
+
+
+
 
 </div>
 
 
 </div>
+<a href="summary" class="nhsuk-button nhsuk-u-margin-bottom-8">Continue</a>
+
 </div>
-</div>
+
+
+
+
+  </div>
 
 
 

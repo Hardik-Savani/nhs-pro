@@ -57,18 +57,15 @@
           </div>
           <div class="nhsuk-grid-column-one-quarter ea">
             <div class="bsa-account-details-bar__action">
-              <a href="/mcp/signed-out" class="log-out-link">Sign out</a>
+              <a href="signed-out" class="log-out-link">Sign out</a>
             </div>
           </div>
         </div>
         <div class="app-beta__container"></div>
         <div class="nhsuk-back-link nhsuk-back-link-spc">
-          <a class="nhsuk-back-link__link" href="/mcp/v1/adjustment-yes-2-months"><svg aria-hidden="true" class="nhsuk-icon nhsuk-icon__chevron-left" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <a class="nhsuk-back-link__link" href="/mcp/v1/adjustment-no"><svg aria-hidden="true" class="nhsuk-icon nhsuk-icon__chevron-left" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path></svg> Back</a>
         </div>
-
-
-
 
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-three-quarters">
@@ -78,10 +75,10 @@
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
-
                 <div class="form-group">
                   <table class="content-table stack-table three-column">
-                  <caption class="nhsuk-table__caption">Contribution details</caption><tbody></tbody>
+                    <caption class="nhsuk-table__caption">Contribution details</caption>
+                    <tbody></tbody>
                     <thead>
                       <tr>
                         <th colspan="2" id="contributions-header"><span></span></th>
@@ -124,39 +121,14 @@
                                     <a href="contributions-and-payment#errbo">Change<span class="visually-hidden"> early retirement reduction buy out.</span></a>
                                 </td> -->
                       </tr>
+
                       <tr>
                         <td id="adjustments-key">Adjustments required?</td>
-                        <td class="numeric" id="contribution.adjustments">Yes</td><!-- <td class="numeric">
+                        <td class="numeric" id="contribution.adjustments">No</td><!-- <td class="numeric">
                                     <a href="contributions-and-payment#errbo">Change<span class="visually-hidden"> early retirement reduction buy out.</span></a>
                                 </td> -->
                       </tr>
-                      <tr class="total">
-                        <td class="bold" id="contribution-total-key">July 2020</td>
-                        <td class="bold" id="contribution-total-key"></td>
 
-                      </tr>
-                      <tr>
-                        <td id="employee-contributions-key">Employee contributions</td>
-                        <td class="numeric" id="contribution.employee.contribution">£1,000.00</td>
-                      </tr>
-                      <tr>
-                        <td id="employer-contributions-key">Employer contributions</td>
-                        <td class="numeric" id="contribution.employer.contribution">£5.00</td>
-                      </tr>
-                      <tr class="total">
-                        <td class="bold" id="contribution-total-key">August 2020</td>
-                        <td class="bold" id="contribution-total-key"></td>
-
-                      </tr>
-
-                      <tr>
-                        <td id="employee-contributions-key">Employee contributions</td>
-                        <td class="numeric" id="contribution.employee.contribution">£1,000.00</td>
-                      </tr>
-                      <tr>
-                        <td id="employer-contributions-key">Employer contributions</td>
-                        <td class="numeric" id="contribution.employer.contribution">£5.00</td>
-                      </tr>
                       <tr class="total">
                         <td class="bold" id="contribution-total-key">Total amount to be debited</td>
                         <td class="numeric" id="contribution.total.debit"><strong>£59,500.00</strong></td><!-- <td class="numeric">
@@ -165,7 +137,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Change</a>
+                          <a href="contributions-and-payment">Change</a>
                         </td>
                         <td>&nbsp;</td>
                       </tr>
@@ -174,8 +146,7 @@
                 </div>
                 <div class="form-group">
                   <table class="content-table stack-table three-column">
-                    <caption class="nhsuk-table__caption">Make a payment</caption>
-                    <tbody></tbody>
+                    <caption class="nhsuk-table__caption">Make a payment</caption><tbody></tbody>
                     <thead>
                       <tr>
                         <th colspan="2"><span></span></th>
@@ -196,19 +167,20 @@
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Change</a>
+                          <a href="make-payment">Change</a>
                         </td>
                         <td>&nbsp;</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+
                 <div class="form-group">
                   <table class="content-table stack-table two-column">
-                    <caption class="nhsuk-table__caption">Your contact details</caption><thead>
+                    <caption class="nhsuk-table__caption">Your contact details</caption><tbody></tbody>
+                      <thead>
                       <tr>
-                        <th colspan="2"><p></p> <span class="nhsuk-hint" id="example-with-hint-text-hint">If your contact details are incorrect, contact the Pensions Online (POL) helpdesk via <a href="mailto:nhsbsa.polhd@nhs.net" class=“nhsuk-link”>nhsbsa.polhd@nhs.net</a> or 0870 011 7108.
-    </span></th>
+                        <th colspan="2"><p></p> <span class="nhsuk-hint" id="example-with-hint-text-hint">If your contact details are incorrect, contact the Pensions Online (POL) helpdesk via <a href="mailto:nhsbsa.polhd@nhs.net" class=“nhsuk-link”>nhsbsa.polhd@nhs.net</a> or 0870 011 7108.</span></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -241,7 +213,7 @@
                 </div>
               </div>
             </div><br>
-            <a class="nhsuk-button nhsuk-u-margin-bottom-8" href="thank-you">Submit your payment</a>
+            <a class="nhsuk-button nhsuk-u-margin-bottom-8" href="thank-you-2">Submit your payment</a>
   </div>
 
 
