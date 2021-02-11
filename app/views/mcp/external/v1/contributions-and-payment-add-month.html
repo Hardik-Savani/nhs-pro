@@ -46,7 +46,7 @@
 
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
-    <div class="nhsuk-header__logo nhsuk-header__logo--only"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS homepage">
+    <div class="nhsuk-header__logo nhsuk-header__logo--only"><a class="nhsuk-header__link nhsuk-header__link--service " href="multi-ea" aria-label="NHS homepage">
         <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
           <path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
           <path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
@@ -121,10 +121,13 @@ Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed
 <span class="nhsuk-caption-l">
 Make contribution payments to the NHS Pension Scheme<span class="nhsuk-u-visually-hidden"> - </span>
 </span>
-Add adjustment period
+Add adjustment
 </h1>
 
-
+<div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <p>If you need to add another adjustment, click <span class="bold">Save and continue</span>. You have the option to add more adjustments on the next page.​​​​</p>
+</div>
 
 
 <div class="nhsuk-form-group">
@@ -132,7 +135,7 @@ Add adjustment period
   <div class="nhsuk-form-group">
   <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
     <label class="nhsuk-label bold" for="input-width-10">
-   Adjustment period
+   Which contribution month is this adjustment for?​
   </label>
     <div class="nhsuk-hint" id="example-hint">
       For example, November 2020
@@ -182,8 +185,24 @@ Add adjustment period
 
   <div class="nhsuk-form-group nhsuk-gbp-input">
   <label class="nhsuk-label" for="input-width-10">
-    Employee added years
+    Employee added years (optional)
   </label>
+  <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Employee added years
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Before the introduction of Additional pension (AP), members could buy Added years to increase their NHS pension benefits at retirement. This involves the member paying extra contributions every month. The amount is set as a fixed percentage of their pensionable pay.  This extra contribution is on top of their basic tiered employee contributions.</p>
+<p>It is no longer possible to make a new application to buy full cost Added years. However, an existing contract remains active until  completed, which is at age 55, 60, or 65. This means that employers with staff who currently buy Added years, must collect the extra contributions and forward them to NHS Pensions within the 19 day deadline.</p>
+<p>Employers need to be aware that:</p>
+<ul class="nhsuk-list nhsuk-list--bullet">
+<li>employees who were subject to the HMRC earnings cap also have capped Added years contributions</li>
+<li>if a member has a break in Scheme membership of 12 months or more, the Added years contract ceases and extra contributions must also stop</li>
+</ul>
+  </div>
+</details>
   <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
   <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
   </div>
@@ -191,8 +210,23 @@ Add adjustment period
 
   <div class="nhsuk-form-group nhsuk-gbp-input">
   <label class="nhsuk-label" for="input-width-10">
-   Additional pension
+   Additional pension (optional)
   </label>
+  <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Additional pension
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Additional pension (AP) replaced the full cost Added years arrangement in April 2008. Members can buy units of £250 to increase their annual NHS Pension. Limits are set for a maximum career increase of £5,000 in the 1995/2008 Scheme and £6,500 in the 2015 Scheme.</p>
+<p>These limits operate independently. This means a member who bought AP whilst a member of the 1995/2008 Scheme, is also able to buy up to an additional £6,500 annual pension after moving to the 2015 Scheme.</p>
+<p>It is possible to buy AP in instalments or as a one-off payment. Employers are legally responsible for collecting contributions and sending them to NHS Pensions at the same time as employee and employer contributions.</p>
+<p>AP contributions attract tax relief within limits set by HM Revenue and Customs.</p>
+</p>
+
+  </div>
+</details>
   <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
   <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
   </div>
@@ -200,8 +234,20 @@ Add adjustment period
 
   <div class="nhsuk-form-group nhsuk-gbp-input">
   <label class="nhsuk-label" for="input-width-10">
-   Early Retirement Reduction Buy Out (ERRBO)
+   Early Retirement Reduction buy out (ERRBO) (optional)
   </label>
+  <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      What is ERRBO?​
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>2015 Scheme members have the ability to buy out the reduction that would apply if claiming retirement benefits before normal pension age. In the 2015 Scheme this is the same as the member’s State Pension Age, or age 65 if later.</p>
+  <p>This may rise during membership of the Scheme if state pension age rises.</p>
+
+  </div>
+  </details>
   <div class="nhsuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
   <input class="nhsuk-input nhsuk-input--width-5" id="cost" name="cost" type="number" spellcheck="false">
   </div>
@@ -213,9 +259,9 @@ Add adjustment period
 
 </div>
 
-<div class="nhsuk-hint">
+<!-- <div class="nhsuk-hint">
   If you need to add another adjustment period, click <span class="bold">Save & Continue.</span> <br />You have the option to add more adjustments on the next page.
-</div>
+</div> -->
 
 
 <a href="adjustment-yes" class="nhsuk-button nhsuk-u-margin-bottom-8">Save and continue</a> <br/>

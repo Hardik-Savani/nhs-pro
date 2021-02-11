@@ -637,11 +637,11 @@ clear: none !important;
 }
 .header-links {
     float: right !important;
-color: #fff;
+    color: #fff;
 }
 .header-links a{
   color: #FFF !important;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .header-links-clr{
@@ -652,7 +652,14 @@ color: #fff;
 .header-links  .nhsuk-account-navigation__link
 {
       padding: 12px 7px 8px !important;
+
 }
+
+.header-links-hover .nhsuk-account-navigation__link:hover
+{
+  border: none !important;
+}
+
 .no-padding-right
 {
   font-size: 16px !important;
@@ -676,4 +683,25 @@ color: #fff;
   margin-bottom: 40px !important;
   margin-top: 10px !important;
 
+}
+
+@media (max-width: 768px) {
+  .nhsuk-account-navigation__link {
+    width: 100%; } }
+
+.nhsuk-account-navigation__link:hover {
+  border-bottom: 4px solid #d8dde0; }
+
+h1.nhsuk-heading-xl-modify  {
+      margin-bottom: 20px !important;
+  }
+
+.nhsuk-inset-text-new{
+  max-width: 55em !important;
+}
+
+
+.nhsuk-table-bottom-padding > .nhsuk-table
+{
+margin-bottom: 28px !important;
 }
