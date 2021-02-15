@@ -7,7 +7,7 @@
 <meta name="description" content="">
 
 <title>
-Signed out - Make payments to the NHS Pension Scheme - NHSBSA
+Submit contribution - Make payments to the NHS Pension Scheme - NHSBSA
 </title>
 
 <link href="https://www.nhs.uk/" rel="preconnect">
@@ -19,9 +19,11 @@ Signed out - Make payments to the NHS Pension Scheme - NHSBSA
 
 <link href="/css/main.css" rel="stylesheet">
 <link href="/css/test.css" rel="stylesheet">
+<link href="/css/hmrc.css" rel="stylesheet">
 
 
 <script src="/nhsuk-frontend/nhsuk.min.js" defer></script>
+<script src="/js/main.min.js" defer></script>
 
 
 <link rel="shortcut icon" href="/nhsuk-frontend/assets/favicons/favicon.ico" type="image/x-icon">
@@ -37,6 +39,8 @@ Signed out - Make payments to the NHS Pension Scheme - NHSBSA
 
 </head>
 <body class="">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
 
 
 
@@ -53,7 +57,9 @@ Signed out - Make payments to the NHS Pension Scheme - NHSBSA
         </span>
       </a>
     </div>
+
     </div>
+
     </header>
 
 <div class="app-beta">
@@ -73,31 +79,70 @@ This is a new service - your <a href="https://www.snapsurveys.com/wh/s.asp?k=151
 
 
 
+
 <div class="nhsuk-width-container multi-ea-top">
 <main class="nhsuk-main-wrapper">
+<div class="ea">
+
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-three-quarters multi-ea-bottom">
+<h5>
+Brighton & Hove Integrated Care Services Ltd. <span class="ea-normal-fnt">Signed in: Sam Curtis Jones
+</span>
+</h5>
+</div>
+<div class="nhsuk-grid-column-one-quarter ea">
+<div class="bsa-account-details-bar__action">
+<a href="signed-out" class="log-out-link">Sign out</a>
+</div>
+</div>
+</div>
+
+
+<div class="app-beta__container"></div>
 
 
 
 
-<div class="nhsuk-grid-row multi-ea-top">
-<div class="nhsuk-grid-column-full">
-<h1 class="margn-tp margin-bt nhsuk-heading-xl">
-<span class="nhsuk-caption-l">Make contribution payments to the NHS Pension Scheme
-<span class="nhsuk-u-visually-hidden"> - </span></span>Signed out
-</h1>
+<div class="nhsuk-back-link nhsuk-back-link-spc">
+  <a class="nhsuk-back-link__link" href="ea">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Back</a>
 </div>
 </div>
 
-<p>You have successfully signed out of your account.</p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="currency">
+    How much does your employer pay towards this?
+  </label>
+  <div id="currency-hint" class="govuk-hint">
+    For example, £600 or £193.54.
+  </div>
+<div class="govuk-input__wrapper">    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+<input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint"></div></div>
 
 
-<div>
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
 
-<p><a href="sign-in?" class="">Sign in to your account</a></p>
+
+
+  </div>
 </div>
-</div>
+
+
+
+
+
 </main>
 </div>
+</div>
+
 
 
 
@@ -144,7 +189,9 @@ All content is available under the
 
 <!-- Custom JavaScript files can be added to this file -->
 <script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/main.js"></script>
+
+<script src="/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+<script src="/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 
 <!-- Add any custom scripts -->
 
