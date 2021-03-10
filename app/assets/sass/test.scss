@@ -687,7 +687,8 @@ clear: none !important;
 
 @media (max-width: 768px) {
   .nhsuk-account-navigation__link {
-    width: 100%; } }
+    width: 100%; }
+  }
 
 .nhsuk-account-navigation__link:hover {
   border-bottom: 4px solid #d8dde0; }
@@ -706,7 +707,40 @@ h1.nhsuk-heading-xl-modify  {
 margin-bottom: 28px !important;
 }
 
-
 .help-links{
   padding-left:400px;
+}
+
+.bulkupload{
+  padding: 0px !important;
+  float: right;
+}
+
+
+
+
+.govuk-file-upload {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+}
+.govuk-file-upload {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nhsuk-tag-successful{
+  background-color: #007f3b !important;
+border: 0px !important;
+padding: 5px;
+}
+.fnt-normal{
+    font-weight:normal !important;
 }
