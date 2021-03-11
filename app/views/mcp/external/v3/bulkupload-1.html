@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
     <title>
-  Bulk User Upload  - Make payments to the NHS Pension Scheme - NHSBSA
+  Bulk User Upload - Make payments to the NHS Pension Scheme - NHSBSA
 </title>
 
     <link href="https://www.nhs.uk/" rel="preconnect">
@@ -37,13 +37,21 @@
     <meta name="msapplication-wide310x150logo" content="/nhsuk-frontend/assets/favicons/widetile-310x150.png">
     <meta name="msapplication-square310x310logo" content="/nhsuk-frontend/assets/favicons/largetile-310x310.png">
 <style>
-.bulkupload{
-  padding: 0px !important;
-  float: right !important;
+.nhsuk-file-upload {
+
+    font-size: 1.1875rem;
+    line-height: 1.31579;
 }
-.fltright{
-  float: left !important;
-  padding: 0px !important;
+.nhsuk-file-upload {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .bulkupload-heading{
   margin-top: 20px !important;
@@ -88,6 +96,7 @@
         </div>
         </header>
 
+
         <div class="nhsuk-account-navigation-container">
         <div class="nhsuk-width-container">
         <nav class="nhsuk-account-navigation">
@@ -125,72 +134,44 @@
   <div class="nhsuk-width-container">
     <main class="nhsuk-main-wrapper" id="maincontent" role="main">
 
-      <!-- <div class="nhsuk-back-link normal-back-link">
-        <a class="nhsuk-back-link__link" href="bulkupload">
+      <div class="nhsuk-back-link normal-back-link">
+        <a class="nhsuk-back-link__link" href="multi-ea">
           <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
           </svg>
-          Back to file upload</a>
-      </div> -->
+          Back</a>
+      </div>
+
 
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-three-quarters">
-          <h1 class="bulkupload-heading margin-bt margn-tp nhsuk-heading-xl">
+          <h1 class="bulkupload-heading nhsuk-heading-xl">
           <span class="nhsuk-caption-l">Make contribution payments to the NHS Pension Scheme
-          <span class="nhsuk-u-visually-hidden"> - </span></span>File upload results
+          <span class="nhsuk-u-visually-hidden"> - </span></span>Contribution payment bulk upload
           </h1>
 
+          <ol class="govuk-list govuk-list--number">
+  <li><a href="NHS-Pensions-bulk-upload-template-V2.xlsx" download>Download the Excel spreadsheet​</a></li>
+  <li>Enter the data for all the EAs for which you are submitting​</li>
+  <li>Save the file as a CSV</li>
+  <li>Upload the file​</li>
+</ol>
 
 
-  <table class="nhsuk-table">
-  <caption class="nhsuk-table__caption"></caption>
-  <thead role="rowgroup" class="nhsuk-table__head">
-    <tr role="row">
-      <th role="columnheader" class="" scope="col">
-        File
-      </th>
-      <th role="columnheader" class="fnt-normal" scope="col">
-        bulk_upload.csv
-      </th>
-    </tr>
-  </thead>
-  <tbody class="nhsuk-table__body">
-    <tr role="row" class="nhsuk-table__row">
-      <td class="nhsuk-table__cell"><span class="bold">Upload status</span></td>
-      <td class="nhsuk-table__cell "><strong class="nhsuk-tag nhsuk-tag--red">
-  Unsuccessful
-</strong></td>
-    </tr>
-    <tr role="row" class="nhsuk-table__row">
-      <td class="nhsuk-table__cell"><span class="bold">Number of errors</span></td>
-      <td class="nhsuk-table__cell ">1</td>
-    </tr>
-  </tbody>
-</table>
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>Do not refresh your browser once you have uploaded the file, as the process may take several minutes.</p>
+          </div>
 
-<h2 class="nhsuk-heading-l">Errors details</h2>
+          <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="file-upload-1">
+            Upload a CSV file
+          </label>
+          <input class="nhsuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+        </div>
 
-<table class="nhsuk-table">
-<caption class="nhsuk-table__caption"></caption>
-<thead role="rowgroup" class="nhsuk-table__head">
-  <tr role="row">
-    <th role="columnheader" class="" scope="col">
-      EA code
-    </th>
-    <th role="columnheader" class="" scope="col">
-      Error message
-    </th>
-  </tr>
-</thead>
-<tbody class="nhsuk-table__body">
-  <tr role="row" class="nhsuk-table__row">
-    <td class="nhsuk-table__cell ">EA2200</td>
-    <td class="nhsuk-table__cell ">Payment already received for same contribution month​</td>
-  </tr>
-</tbody>
-</table>
 
-<p><a class="nhsuk-link" href="bulkupload-1">Go back to re-upload the file​</a></p>
+<a class="nhsuk-button nhsuk-u-margin-bottom-8" type="submit" href="bulkupload-successful">Upload file</a>
 
 
 
