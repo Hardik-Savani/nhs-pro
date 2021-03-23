@@ -15,6 +15,7 @@
 
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
     <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="https://moj-design-system.herokuapp.com/public/stylesheets/code.css" rel="stylesheet">
     <!--[if IE]>
     	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
     <![endif]-->
@@ -125,25 +126,6 @@
 <div class="">
 
 
-<div class="nhsuk-grid-row">
-<div class="nhsuk-grid-column-three-quarters">
-<!--
-<h2 class="app-page-heading">
-Brighton & Hove Integrated Care Services Ltd.<span class="nhsuk-caption-l">Signed in: Sam Curtis Jones
-<span class="nhsuk-u-visually-hidden"> - </span></span>
-</h2> -->
-</div>
-
-<!-- <div class="nhsuk-grid-column-one-quarter">
-<div class="bsa-account-details-bar__action">
-        <a href="/mcp/external/v1/signed-out" class="log-out-link">Sign out</a>
-    </div>
-</div> -->
-
-
-</div>
-<!-- <div class="app-beta__container"></div> -->
-
 
 
 <div class="grid-row">
@@ -153,7 +135,21 @@ Brighton & Hove Integrated Care Services Ltd.<span class="nhsuk-caption-l">Signe
 <div class="multi-ea-emp">
 
     <div class="nhsuk-grid-column-one-half fltright">
-      <h1 class="nhsuk-heading-m">Your employing authorities (EA)</h1>
+      <div class="moj-search">
+      <form action="#" method="post">
+      <div class="govuk-form-group nopaddingh1">
+        <h1 class="nhsuk-heading-m">Find an employing authority​</h1>
+        <span id="search-hint" class="govuk-hint moj-search__hint ">
+          You can search by EA code or name​.
+        </span>
+        <input class="govuk-input moj-search__input " id="search" name="search" type="search" aria-describedby="search-hint">
+      </div>
+      <button type="submit" class="govuk-button moj-search__button " data-module="govuk-button">
+        Search
+      </button>
+      </form>
+
+      </div>
     </div>
 
   <div class="nhsuk-grid-column-one-half">
@@ -163,13 +159,65 @@ Brighton & Hove Integrated Care Services Ltd.<span class="nhsuk-caption-l">Signe
     <p class="bulkupload"><a class="nhsuk-link nhsuk-link--no-visited-state" href="bulkupload">Contribution payment bulk upload</a></p>
   </div>
 
-
-
-
-
 </div>
 
+<div>
+<table class="nhsuk-table" data-module="moj-sortable-table">
+<thead class="nhsuk-table__head">
+  <tr class="nhsuk-table__row">
 
+    <th scope="col" class="nhsuk-table__header" aria-sort="ascending">EA account</th>
+
+    <th scope="col" class="nhsuk-table__header" aria-sort="none">Last payment date	</th>
+
+    <th scope="col" class="nhsuk-table__header" aria-sort="none">Next payment due</th>
+
+  </tr>
+</thead>
+
+<tbody class="nhsuk-table__body">
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1234 - NHS Blackpool</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>15 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1235 - NHS Bolton​</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>18 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1236 - NHS Fleetwood​</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>15 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1237 - NHS Preston​​</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>19 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1238 - NHS Middlebrook​​​</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>15 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+  <tr class="nhsuk-table__row">
+    <td class="nhsuk-table__cell"><a href="ea" class="set-cookie" data-cookie-value="EA1234" data-cookie-name="eaCode">EA1239 - NHS Sheffield​​​​</a></td>
+    <td class="nhsuk-table__cell" data-sort-value=""><span class="nhsuk-table-responsive__heading"></span>15 January 2021</td>
+    <td class="nhsuk-table__cell">19 February 2021</td>
+  </tr>
+
+
+</tbody>
+</table>
+</div>
+<!--
 <table role="table" class="nhsuk-table-responsive">
 
   <thead role="rowgroup" class="nhsuk-table__head">
@@ -209,7 +257,7 @@ Brighton & Hove Integrated Care Services Ltd.<span class="nhsuk-caption-l">Signe
         <span class="nhsuk-table-responsive__heading"></span>15 February 2021
       </td>
     </tr>
-  <!--   <tr role="row" class="nhsuk-table__row">
+     <tr role="row" class="nhsuk-table__row">
       <td role="cell" class="nhsuk-table__cell">
         <span class="nhsuk-table-responsive__heading">EA Account </span><a href="ea" class="set-cookie" data-cookie-value="EA4000" data-cookie-name="eaCode">EA4000 - NHS Bolton</a>
       </td>
@@ -364,7 +412,14 @@ Brighton & Hove Integrated Care Services Ltd.<span class="nhsuk-caption-l">Signe
 
     <!-- For adding page specific JavsScript -->
 
-
+    <script src="https://moj-design-system.herokuapp.com/public/javascripts/vendor/jquery.min.js"></script>
+    <script src="https://moj-design-system.herokuapp.com/public/javascripts/all.js"></script>
+    <script src="https://moj-design-system.herokuapp.com/node_modules/moj-frontend/moj/all.js"></script>
+    <script src="https://moj-design-system.herokuapp.com/node_modules/govuk-frontend/govuk/all.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+      window.MOJFrontend.initAll();
+    </script>
 
 
   </body>
